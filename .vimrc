@@ -30,6 +30,8 @@ set ttimeoutlen=0
 vnoremap <C-c> :w !xclip -sel c <CR><CR>
 " show number of matches
 set shortmess-=S
+" without this it just overwhelms you with matches for auto-completion
+set complete=.
 colorscheme koehler
 
 " vim-plug plugins
