@@ -28,6 +28,8 @@ set timeoutlen=0
 set ttimeoutlen=0
 " make Ctrl+C copy selected text to the system clipboard
 vnoremap <C-c> :w !xclip -sel c <CR><CR>
+" show number of matches
+set shortmess-=S
 colorscheme koehler
 
 " vim-plug plugins
