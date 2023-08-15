@@ -11,8 +11,6 @@ noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
-" fzf's file explorer
-nmap <C-_> :Files<CR>
 set noswapfile " just save often
 set relativenumber " show line numbers relative to cursor
 set autoindent " automatically indent new lines
@@ -35,6 +33,4 @@ colorscheme koehler
 " vim-plug plugins
 call plug#begin('~/.vim/plugged')
   Plug 'ziglang/zig.vim'
-  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-  Plug 'junegunn/fzf.vim'
 call plug#end()
