@@ -32,6 +32,7 @@ vnoremap <C-c> :w !xclip -sel c <CR><CR>
 set shortmess-=S
 " without this it just overwhelms you with matches for auto-completion
 set complete=.
+set encoding=utf-8
 colorscheme koehler
 
 " vim-plug plugins
