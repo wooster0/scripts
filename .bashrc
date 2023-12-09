@@ -22,3 +22,6 @@ alias gc="git commit"
 alias gs="git status"
 alias gd="git diff"
 alias gl="git log"
+
+# This avoids duplicate commands in the command history.
+export HISTCONTROL=ignoreboth:erasedups
