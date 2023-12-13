@@ -1,41 +1,49 @@
-set number " show line numbers
-set hlsearch " highlight search matches
-set expandtab " use spaces
-" number of spaces
+" Show line numbers.
+set number
+" Highlight search matches.
+set hlsearch
+" Use spaces for indentation.
+set expandtab
+" Number of spaces for indentation.
 set tabstop=4
 set shiftwidth=4
-set showcmd " show the command in the bottom right
-" make arrow keys do nothing to get rid of the bad habit.
-" they still work in input mode which is fine.
+" Show the command in the bottom right.
+set showcmd
+" Make arrow keys do nothing to get rid of the bad habit.
+" They still work in input mode which is fine.
 noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
-set noswapfile " just save often
-set relativenumber " show line numbers relative to cursor
-set autoindent " automatically indent new lines
-" if we edit the same file in multiple Vim instances, they will synchronize
+" Swap files are only rarely useful. Just save often.
+set noswapfile
+" Show line numbers relative to cursor.
+set relativenumber
+" Automatically indent new lines.
+set autoindent
+" If we edit the same file in multiple Vim instances, they will synchronize.
 set autoread
-" autosave file on every text change and exit of insert mode
+" Autosave file on every text change and exit of insert mode.
 autocmd TextChanged,InsertLeave * if &readonly==0 && filereadable(bufname('%')) | silent update | endif
-" ignore case when searching
+" Ignore case when searching.
 set ignorecase
-" disable the mouse
+" Disable the mouse.
 set mouse=""
-" don't wait
+" Don't wait.
 set updatetime=0
 set timeoutlen=0
 set ttimeoutlen=0
-" make Ctrl+C copy selected text to the system clipboard
+" Make Ctrl+C copy selected text to the system clipboard.
+" Make sure you have xclip installed.
 vnoremap <C-c> :w !xclip -sel c <CR><CR>
-" show number of matches
+" Show number of matches.
 set shortmess-=S
-" without this it just overwhelms you with matches for auto-completion
+" Without this it just overwhelms you with matches for auto-completion.
 set complete=.
+" Use UTF-8.
 set encoding=utf-8
-colorscheme koehler
+" Enable syntax highlighting based on the file.
+filetype plugin on
+syntax on
 
-" vim-plug plugins
-call plug#begin('~/.vim/plugged')
-  Plug 'ziglang/zig.vim'
-call plug#end()
+" To get Zig syntax highlighting: https://github.com/ziglang/zig.vim#if-using-vim
