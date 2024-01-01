@@ -6,8 +6,14 @@
 # are in fact necessary to not mess up the terminal (you'll notice if you remove them).
 PS1='\[\033[01;32m\]$(pwd|sed "s|$HOME|~|")$(if git branch --show-current 1> /dev/null 2> /dev/null; then echo "\[\033[00m\]@\[\033[00m\]\[\033[01;34m\]$(git branch --show-current)"; fi)\[\033[00m\]\$ '
 
-# This is how I have Zig installed.
-export PATH="$HOME/Desktop/zig-linux-x86_64:$PATH"
+# Download from https://ziglang.org
+# and then rename to zig-linux-x86_64
+export PATH=$PATH:~/zig-linux-x86_64
+
+# Download from https://dotnet.microsoft.com/en-us/download/dotnet
+# and then rename to dotnet
+export PATH=$PATH:~/dotnet
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
 # By default, go to the desktop.
 # But only go to desktop if we start in the home directory.
