@@ -1,9 +1,9 @@
 #!/bin/sh
 
-# This script downloads Zig on the master branch and creates a zig-linux-x86_64 directory in the current working directory.
+# This script downloads Zig (master branch).
 
-# Apart from this in order to have `zig` available globally you still have to put the directory created by this script in $PATH
-# with ~/.bashrc or whatever using something like `export PATH="$HOME/Desktop/zig-linux-x86_64:$PATH"`.
+# After this you have to put the zig-linux-x86_64 directory created by this script in $PATH
+# in your ~/.bashrc or whatever using something like `export PATH="$HOME/Desktop/zig-linux-x86_64:$PATH"`.
 
 echo "before: $(zig version)"
 
