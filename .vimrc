@@ -34,8 +34,9 @@ set updatetime=0
 set timeoutlen=0
 set ttimeoutlen=0
 " Make Ctrl+C copy selected text to the system clipboard.
-" Make sure you have xclip installed.
-vnoremap <C-c> :w !xclip -sel c <CR><CR>
+" On Wayland, use wl-copy (wl-clipboard package).
+" On X11, use xclip or xsel instead.
+vnoremap <C-c> :w !wl-copy <CR><CR>
 " Show number of matches.
 set shortmess-=S
 " Without this it just overwhelms you with matches for auto-completion.
