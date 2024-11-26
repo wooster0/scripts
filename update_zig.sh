@@ -2,8 +2,8 @@
 
 # This script downloads Zig (master branch).
 
-# After this you have to put the zig-linux-x86_64 directory created by this script in $PATH
-# in your ~/.bashrc or whatever using something like `export PATH="$HOME/Desktop/zig-linux-x86_64:$PATH"`.
+# After running this you have to put the zig-linux-x86_64 directory created by this script in $PATH
+# in your ~/.bashrc or whatever using something like `export PATH=$PATH:~/zig-linux-x86_64`.
 
 echo "before: $(zig version)"
 
