@@ -1,4 +1,7 @@
-# This is *not* a complete ~/.bashrc. I took my ~/.bashrc and omitted everything that I didn't add.
+# This might not be a complete ~/.bashrc. I took my ~/.bashrc and omitted everything that I didn't add.
+
+# Show all files by default and enable color.
+alias ls='ls -A --color=auto'
 
 # My custom prompt!
 # This prompt shows you the cwd and the git branch you're on, if any, while taking up minimal space on the command line.
