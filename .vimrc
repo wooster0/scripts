@@ -46,5 +46,8 @@ set encoding=utf-8
 " Enable syntax highlighting based on the file.
 filetype plugin on
 syntax on
+" Prevent creation of .viminfo file.
+let skip_defaults_vim=1
+set viminfo=""
 
 " To get Zig syntax highlighting: https://github.com/ziglang/zig.vim#if-using-vim
