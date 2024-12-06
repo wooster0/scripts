@@ -22,7 +22,10 @@ alias gl="git log"
 # Download from https://ziglang.org and then rename to zig-linux-x86_64.
 export PATH=$PATH:~/zig-linux-x86_64
 
-# Don't create .bash_history.
+# Don't save the line history in a .bash_history file.
 unset HISTFILE
+
+# Don't add the line to the history if it matches the previous history entry.
+export HISTCONTROL=ignoredups
 
 cd ~
