@@ -26,6 +26,7 @@ export PATH=$PATH:~/zig-linux-x86_64
 unset HISTFILE
 
 # Don't add the line to the history if it matches the previous history entry.
-export HISTCONTROL=ignoredups
+# Also remove all previous lines from the history that match the line.
+export HISTCONTROL=ignoredups:erasedups
 
 cd ~
