@@ -5,6 +5,8 @@ export TERM=xterm-256color
 
 # Show all files by default and enable color.
 alias ls='ls -A --color=auto'
+# Enable color by default for grep.
+alias grep='grep --color=auto'
 
 # My custom prompt!
 # This prompt shows you the cwd and the git branch you're on, if any, while taking up minimal space on the command line.
