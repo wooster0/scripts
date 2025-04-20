@@ -21,8 +21,10 @@ alias gs="git status"
 alias gd="git diff"
 alias gl="git log"
 
-# Download from https://ziglang.org and then rename to zig-linux-x86_64.
+# Download from https://ziglang.org, unzip, and then rename to zig-linux-x86_64.
 export PATH=$PATH:~/zig-linux-x86_64
+
+export EDITOR=vim
 
 # Don't save the line history in a .bash_history file.
 unset HISTFILE
