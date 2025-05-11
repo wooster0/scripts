@@ -33,4 +33,7 @@ unset HISTFILE
 # Also remove all previous lines from the history that match the line.
 export HISTCONTROL=ignoredups:erasedups
 
+# Prevent Ctrl+D from closing the terminal.
+set ignoreeof
+
 cd ~
